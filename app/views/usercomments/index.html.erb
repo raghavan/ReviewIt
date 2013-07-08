@@ -4,6 +4,7 @@
   <tr>
     <th>Comment</th>
     <th>User</th>
+    <th>Product</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= usercomment.comment %></td>
     <td><%= usercomment.user_id %></td>
+    <td><%= usercomment.product_id %></td>
     <td><%= link_to 'Show', usercomment %></td>
     <td><%= link_to 'Edit', edit_usercomment_path(usercomment) %></td>
     <td><%= link_to 'Destroy', usercomment, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>

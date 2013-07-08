@@ -10,6 +10,11 @@
   <%= @usercomment.user_id %>
 </p>
 
+<p>
+  <b>Product:</b>
+  <%= @usercomment.product_id %>
+</p>
+
 
 <%= link_to 'Edit', edit_usercomment_path(@usercomment) %> |
 <%= link_to 'Back', usercomments_path %>

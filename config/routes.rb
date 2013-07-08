@@ -1,4 +1,6 @@
 Reviewit::Application.routes.draw do
+  resources :products
+
   resources :usercomments
 
   resources :users

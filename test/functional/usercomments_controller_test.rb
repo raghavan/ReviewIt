@@ -18,7 +18,7 @@ class UsercommentsControllerTest < ActionController::TestCase
 
   test "should create usercomment" do
     assert_difference('Usercomment.count') do
-      post :create, :usercomment => { :comment => @usercomment.comment, :user_id => @usercomment.user_id }
+      post :create, :usercomment => { :comment => @usercomment.comment, :product_id => @usercomment.product_id, :user_id => @usercomment.user_id }
     end
 
     assert_redirected_to usercomment_path(assigns(:usercomment))
@@ -35,7 +35,7 @@ class UsercommentsControllerTest < ActionController::TestCase
   end
 
   test "should update usercomment" do
-    put :update, :id => @usercomment, :usercomment => { :comment => @usercomment.comment, :user_id => @usercomment.user_id }
+    put :update, :id => @usercomment, :usercomment => { :comment => @usercomment.comment, :product_id => @usercomment.product_id, :user_id => @usercomment.user_id }
     assert_redirected_to usercomment_path(assigns(:usercomment))
   end
 
